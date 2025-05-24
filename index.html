@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SuperFlix</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="https://i.pinimg.com/736x/c4/8d/91/c48d91d139e9125db9bb67dde0ba7dc2.jpg" alt="Logo SuperFlix" />
+      <span>SuperFlix</span>
+    </div>
+
+    <!-- Menu -->
+    <ul class="nav-links">
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Cursos</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+
+    <!-- Barra de pesquisa -->
+    <div class="search-box">
+      <input type="text" placeholder="Pesquisar...">
+    </div>
+
+    <!-- Botão de menu responsivo -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="main-content">
+    <div class="image-container">
+      <img src="red-aesthetic-super-girl-oo5c10994qrx9d63.jpg" alt="EM BREVE!" />
+      <div class="image-text">Em breve</div>
+    </div>
+  </main>
+
+  <!-- SCRIPT -->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
